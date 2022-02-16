@@ -6,7 +6,7 @@ import axios from 'axios';
      },
  });
  // Add a request interceptor
-axios.interceptors.request.use(function (config) {
+axiosClient.interceptors.request.use(function (config) {
     
         const accessToken = localStorage.getItem('access_token')
         if(accessToken) {
@@ -20,7 +20,7 @@ axios.interceptors.request.use(function (config) {
   });
 
 // Add a response interceptor
-axios.interceptors.response.use(function (response) {
+axiosClient.interceptors.response.use(function (response) {
     // Any status code that lie within the range of 2xx cause this function to trigger
     // Do something with response data
     return response.data;
