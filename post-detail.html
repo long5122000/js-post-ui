@@ -86,7 +86,12 @@
                 quas ducimus aliquid. Praesentium ea aspernatur vero deserunt.
               </p>
 
-              <img class="post-image" src="https://picsum.photos/1368/800" alt="Picsum photos" />
+              <img
+                class="post-image"
+                data-album="easy-frontend"
+                src="https://picsum.photos/id/221/1368/800"
+                alt="Picsum photos"
+              />
 
               <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci suscipit
@@ -106,7 +111,12 @@
                 quas ducimus aliquid. Praesentium ea aspernatur vero deserunt.
               </p>
 
-              <img class="post-image" src="https://picsum.photos/1368/1000" alt="Picsum photos" />
+              <img
+                class="post-image"
+                data-album="easy-frontend"
+                src="https://picsum.photos/id/213/1368/1000"
+                alt="Picsum photos"
+              />
 
               <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci suscipit
@@ -122,11 +132,32 @@
     <footer class="text-center text-muted py-3">
       <small>Created by Po with <i class="fas fa-heart"></i></small>
     </footer>
+
+    <div id="lightbox" class="modal fade" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-body">
+            <img data-id="lightboxImg" src="" alt="" width="100%" />
+
+            <div class="text-center mt-3">
+              <button data-id="lightboxPrev" type="button" class="btn btn-secondary btn-sm">
+                Prev
+              </button>
+              <button data-id="lightboxNext" type="button" class="btn btn-secondary btn-sm">
+                Next
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script type="module" src="/js/post-detail.js"></script>
     <!-- Scripts should be placed here to prevent blocking render UI -->
   </body>
 </html>
